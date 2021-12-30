@@ -1,10 +1,7 @@
-[build]
-publish: /opt/build/repo/build
-functions = "./function/"
-[[redirects]]
-from = "/api"
-to= "./netlify/functions/:splat"
-status = 200
-command: CI= npm run build
-commandOrigin: ui
-publishOrigin: ui
+  [build]
+   command: CI= npm run build
+     commandOrigin: ui
+  environment:
+     - CI
+   publish: /opt/build/repo/build
+  publishOrigin: ui
