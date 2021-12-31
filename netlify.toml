@@ -1,7 +1,0 @@
-  [build]
-   command: CI= npm run build
-     commandOrigin: ui
-  environment:
-     - CI
-   publish: /opt/build/repo/build
-  publishOrigin: ui
